@@ -26,6 +26,8 @@ That will add `logitup` to the consuming project's `pyproject.toml` dependencies
 
 ## Usage
 
+See [`examples/`](examples/) for runnable examples.
+
 ```python
 import logging
 
