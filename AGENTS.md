@@ -31,6 +31,7 @@ Use `uv`.
 
 ```bash
 uv run python -m compileall src
+uv run pytest
 ```
 
 For a quick smoke test:
@@ -91,4 +92,5 @@ For code changes, run at minimum:
 
 ```bash
 uv run python -m compileall src
+uv run pytest
 ```
