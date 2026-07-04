@@ -27,11 +27,12 @@ logging framework.
 
 ## Development commands
 
-Use `uv`.
+Use `uv` and `just`.
 
 ```bash
-uv run python -m compileall src
-uv run pytest
+just sync
+just fmt
+just test
 ```
 
 For a quick smoke test:
@@ -91,6 +92,6 @@ For docs-only changes, no runtime test is required.
 For code changes, run at minimum:
 
 ```bash
-uv run python -m compileall src
-uv run pytest
+just fmt
+just test
 ```
