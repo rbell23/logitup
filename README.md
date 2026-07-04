@@ -14,6 +14,16 @@ Small, reusable defaults for Python's stdlib `logging` package.
   - override with the `LOGITUP_FILE` environment variable
   - or pass `log_file=...` directly
 
+## Installation
+
+Install directly from the Git repo:
+
+```bash
+uv add "logitup @ git+ssh://git@github.com/rbell23/logitup.git"
+```
+
+That will add `logitup` to the consuming project's `pyproject.toml` dependencies.
+
 ## Usage
 
 ```python
