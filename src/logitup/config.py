@@ -144,10 +144,7 @@ def _deep_update(
     target: MutableMapping[str, Any], updates: Mapping[str, Any]
 ) -> MutableMapping[str, Any]:
     for key, value in updates.items():
-        if (
-            isinstance(value, Mapping)
-            and isinstance(target.get(key), MutableMapping)
-        ):
+        if isinstance(value, Mapping) and isinstance(target.get(key), MutableMapping):
             _deep_update(target[key], value)
         else:
             target[key] = copy.deepcopy(value)
